@@ -7,8 +7,12 @@ import javax.persistence.Id;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonView;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 
 @Entity
+@NoArgsConstructor
+@AllArgsConstructor
 public class Book {
 
     @JsonIgnore
@@ -32,15 +36,6 @@ public class Book {
 
     @Column
     private String language;
-
-    public Book() {
-    }
-
-    public Book(final String author, final String title, final String isbn) {
-        this.author = author;
-        this.title = title;
-        this.isbn = isbn;
-    }
 
     //
 
