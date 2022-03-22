@@ -39,6 +39,12 @@ public class Book {
 
     //
 
+    public Book(final String author, final String title, final String isbn) {
+        this.author = author;
+        this.title = title;
+        this.isbn = isbn;
+    }
+
     public Long getId() {
         return id;
     }
